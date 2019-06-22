@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prince shah">
+<meta name="description" content="I love coding and want to share my learnings with others">
+<meta name="generator" content="Hugo 0.55.6" />
+<title>Merge Sort</title>
+<link rel="shortcut icon" href="https://shahprincea.github.io/leonidas/images/favicon.ico">
+<link rel="stylesheet" href="https://shahprincea.github.io/leonidas/css/style.css">
+<link rel="stylesheet" href="https://shahprincea.github.io/leonidas/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="https://shahprincea.github.io/leonidas/css/monosocialiconsfont.css">
+
+
+
+<link href="https://shahprincea.github.io/leonidas/index.xml" rel="alternate" type="application/rss+xml" title="Programmer" />
+
+
+<meta property="og:title" content="Merge Sort" />
+<meta property="og:description" content=" Sorting Merge sort is comparison based sorting.
+ Algo : Divide and Conquer Time complexity : O(nlog(n)) Space Complexity : O(n)
+public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length == 0) return; int[] aux = new int[arr.length];	mergeSort(arr, aux, 0, arr.length-1);	} public void mergeSort(int[] arr, int[] aux, int left, int right) { if(left &lt; right) { int mid = left &#43; (right - left)/2; //Divide mergeSort(arr, aux, left, mid); mergeSort(arr, aux, mid&#43;1, right); merge(arr, aux, left, mid, right); } } //Merge two sorted array public void merge(int[] arr, int[] aux, int left, int mid, int right) { int i = left, j = mid &#43; 1, k = left; while(i &lt;= mid &amp;&amp; j &lt;= right) { if(arr[i] &lt; arr[j]) aux[k] = arr[i&#43;&#43;]; else aux[k] = arr[j&#43;&#43;]; k&#43;&#43;; } while(i &lt;= mid) { aux[k&#43;&#43;] = arr[i&#43;&#43;]; } while(j &lt;= right) { aux[k&#43;&#43;] = arr[j&#43;&#43;]; } for(int p = left; p &lt;= right; p&#43;&#43;) { arr[p] = aux[p]; } }   " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shahprincea.github.io/leonidas/post/merge-sort/" />
+
+
+
+
+<meta itemprop="name" content="Merge Sort">
+<meta itemprop="description" content=" Sorting Merge sort is comparison based sorting.
+ Algo : Divide and Conquer Time complexity : O(nlog(n)) Space Complexity : O(n)
+public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length == 0) return; int[] aux = new int[arr.length];	mergeSort(arr, aux, 0, arr.length-1);	} public void mergeSort(int[] arr, int[] aux, int left, int right) { if(left &lt; right) { int mid = left &#43; (right - left)/2; //Divide mergeSort(arr, aux, left, mid); mergeSort(arr, aux, mid&#43;1, right); merge(arr, aux, left, mid, right); } } //Merge two sorted array public void merge(int[] arr, int[] aux, int left, int mid, int right) { int i = left, j = mid &#43; 1, k = left; while(i &lt;= mid &amp;&amp; j &lt;= right) { if(arr[i] &lt; arr[j]) aux[k] = arr[i&#43;&#43;]; else aux[k] = arr[j&#43;&#43;]; k&#43;&#43;; } while(i &lt;= mid) { aux[k&#43;&#43;] = arr[i&#43;&#43;]; } while(j &lt;= right) { aux[k&#43;&#43;] = arr[j&#43;&#43;]; } for(int p = left; p &lt;= right; p&#43;&#43;) { arr[p] = aux[p]; } }   ">
+
+
+
+<meta itemprop="wordCount" content="163">
+
+
+
+<meta itemprop="keywords" content="sort," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Merge Sort"/>
+<meta name="twitter:description" content=" Sorting Merge sort is comparison based sorting.
+ Algo : Divide and Conquer Time complexity : O(nlog(n)) Space Complexity : O(n)
+public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length == 0) return; int[] aux = new int[arr.length];	mergeSort(arr, aux, 0, arr.length-1);	} public void mergeSort(int[] arr, int[] aux, int left, int right) { if(left &lt; right) { int mid = left &#43; (right - left)/2; //Divide mergeSort(arr, aux, left, mid); mergeSort(arr, aux, mid&#43;1, right); merge(arr, aux, left, mid, right); } } //Merge two sorted array public void merge(int[] arr, int[] aux, int left, int mid, int right) { int i = left, j = mid &#43; 1, k = left; while(i &lt;= mid &amp;&amp; j &lt;= right) { if(arr[i] &lt; arr[j]) aux[k] = arr[i&#43;&#43;]; else aux[k] = arr[j&#43;&#43;]; k&#43;&#43;; } while(i &lt;= mid) { aux[k&#43;&#43;] = arr[i&#43;&#43;]; } while(j &lt;= right) { aux[k&#43;&#43;] = arr[j&#43;&#43;]; } for(int p = left; p &lt;= right; p&#43;&#43;) { arr[p] = aux[p]; } }   "/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='https://shahprincea.github.io/leonidas/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+ 		<a href='/leonidas/about/'>About</a>
+  	
+
+	
+		<a class="cta" href="https://shahprincea.github.io/leonidas/index.xml">Subscribe</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Merge Sort</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        January 1, 0001
+        <br>
+        
+        
+            
+                <a href="https://shahprincea.github.io/leonidas/tags/sort">sort</a>
+            
+        
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<h2 id="sorting">Sorting</h2>
+
+<p>Merge sort is comparison based sorting.</p>
+
+<ul>
+<li><strong>Algo</strong> : Divide and Conquer</li>
+<li><strong>Time complexity</strong> : O(nlog(n))</li>
+
+<li><p><strong>Space Complexity</strong> : O(n)</p>
+
+<pre><code>public void mergeSort(int[] arr) {
+
+	//Error handling
+	if(arr == null || arr.length == 0)
+		return;
+
+	int[] aux = new int[arr.length];	
+	mergeSort(arr, aux, 0, arr.length-1);	
+}
+
+
+public void mergeSort(int[] arr, int[] aux, int left, int right) {
+	if(left &lt; right) {
+
+		int mid = left + (right - left)/2;
+
+		//Divide
+		mergeSort(arr, aux, left, mid);
+		mergeSort(arr, aux, mid+1, right);
+		merge(arr, aux, left, mid, right);
+	}
+}
+
+//Merge two sorted array
+public void merge(int[] arr, int[] aux, int left, int mid, int right) {
+	int i = left, j = mid + 1, k = left;
+
+	while(i &lt;= mid &amp;&amp; j &lt;= right) {
+		if(arr[i] &lt; arr[j]) 
+			aux[k] = arr[i++];
+		else 
+			aux[k] = arr[j++];
+		k++;
+	}
+
+	while(i &lt;= mid) {
+		aux[k++] = arr[i++];
+	}
+
+	while(j &lt;= right) {
+		aux[k++] = arr[j++];
+	}
+
+	for(int p = left; p &lt;= right; p++) {
+		arr[p] = aux[p];
+	}
+}
+</code></pre></li>
+</ul>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    
+    <img class="avatar" src="https://shahprincea.github.io/leonidas/images/avatar.png">
+    <div>
+        <span class="dark">Prince shah</span>
+        <span>I&#39;m a Programmer.</span>
+    </div>
+    
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fshahprincea.github.io%2fleonidas%2fpost%2fmerge-sort%2f - Merge%20Sort "><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://github.com/shahprincea">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/shahprincea/">
+        circlelinkedin
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 22069 Prince shah
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://shahprincea.github.io/leonidas/js/main.js"></script>
+<script src="https://shahprincea.github.io/leonidas/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

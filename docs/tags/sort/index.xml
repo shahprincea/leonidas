@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sort on Cupper</title>
+    <title>sort on King Leonidas</title>
     <link>https://shahprincea.github.io/leonidas/tags/sort/</link>
-    <description>Recent content in sort on Cupper</description>
+    <description>Recent content in sort on King Leonidas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Feb 2019 23:39:06 -0600</lastBuildDate>
     
 	<atom:link href="https://shahprincea.github.io/leonidas/tags/sort/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,13 +13,11 @@
     <item>
       <title>Merge Sort</title>
       <link>https://shahprincea.github.io/leonidas/merge-sort/</link>
-      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://shahprincea.github.io/leonidas/merge-sort/</guid>
       <description> Sorting Merge sort is comparison based sorting.
-Algo : Divide and Conquer
-{{% note %}} Time complexity : O(nlog(n)) Space Complexity : O(n)
-public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length == 0) return; int[] aux = new int[arr.length];	mergeSort(arr, aux, 0, arr.length);	} public void mergeSort(int[] arr, int[] aux, int left, int right) { if(left &amp;lt; right) { int mid = left + (right - left)/2; //Divide mergeSort(arr, aux, left, mid); mergeSort(arr, aux, mid+1, right); merge(arr, aux, left, mid, right); } } //Merge two sorted array public void merge(int[] arr, int[] aux, int left, int mid, int right) { int i = left, j = mid + 1, k = left; while(i &amp;lt;= mid &amp;amp;&amp;amp; j &amp;lt;= right) { if(arr[i] &amp;lt; arr[j]) { aux[k] = arr[i]; i++; } else { aux[k] = arr[j]; j++; } k++; } while(i &amp;lt;= left) { aux[k++] = arr[i++]; } while(j &amp;lt;= right) { aux[k++] = arr[j++]; } for(int p = left; p &amp;lt;= right; p++) { a[p] = aux[p]; } }  </description>
+ Algo : Divide and Conquer Time complexity : O(nlog(n)) Space Complexity : O(n)  public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length == 0) return; int[] aux = new int[arr.length];	mergeSort(arr, aux, 0, arr.length-1);	} public void mergeSort(int[] arr, int[] aux, int left, int right) { if(left &amp;lt; right) { int mid = left + (right - left)/2; //Divide mergeSort(arr, aux, left, mid); mergeSort(arr, aux, mid+1, right); merge(arr, aux, left, mid, right); } } //Merge two sorted array public void merge(int[] arr, int[] aux, int left, int mid, int right) { int i = left, j = mid + 1, k = left; while(i &amp;lt;= mid &amp;amp;&amp;amp; j &amp;lt;= right) { if(arr[i] &amp;lt; arr[j]) aux[k] = arr[i++]; else aux[k] = arr[j++]; k++; } while(i &amp;lt;= mid) { aux[k++] = arr[i++]; } while(j &amp;lt;= right) { aux[k++] = arr[j++]; } for(int p = left; p &amp;lt;= right; p++) { arr[p] = aux[p]; } }  </description>
     </item>
     
   </channel>

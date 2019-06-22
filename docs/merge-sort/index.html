@@ -32,7 +32,7 @@
 
   
   
-  <title>Merge Sort | Cupper</title>
+  <title>Merge Sort | King Leonidas</title>
 </head>
 
   <body>
@@ -130,7 +130,7 @@
       <header class="intro-and-nav" role="banner">
   <div>
     <div class="intro">
-      <a class="logo" href="/" aria-label="Cupper home page">
+      <a class="logo" href="/" aria-label="King Leonidas home page">
         <img src="https://shahprincea.github.io/leonidas/images/logo.svg" alt="">
       </a>
       <p class="library-desc">
@@ -233,8 +233,11 @@
     <div class="date">
       
       
-      <strong aria-hidden="true">Publish date: </strong>Feb 12, 2019
+      <strong aria-hidden="true">Publish date: </strong>Jan 1, 0001
       
+        
+          <br>
+          <strong aria-hidden="true">Last updated: </strong>Jun 22, 2019
         
       
     </div>
@@ -268,20 +271,20 @@
 
 <p>Merge sort is comparison based sorting.</p>
 
-<p>Algo : Divide and Conquer</p>
+<ul>
+<li><strong>Algo</strong> : Divide and Conquer</li>
+<li><strong>Time complexity</strong> : O(nlog(n))</li>
+<li><strong>Space Complexity</strong> : O(n)</li>
+</ul>
 
-<p>{{% note %}}
-Time complexity : O(nlog(n))
-Space Complexity : O(n)</p>
-
-<pre><code>public void mergeSort(int[] arr) {
+<pre><code class="language-java">public void mergeSort(int[] arr) {
 
 	//Error handling
 	if(arr == null || arr.length == 0)
 		return;
 
 	int[] aux = new int[arr.length];	
-	mergeSort(arr, aux, 0, arr.length);	
+	mergeSort(arr, aux, 0, arr.length-1);	
 }
 
 
@@ -302,18 +305,14 @@ public void merge(int[] arr, int[] aux, int left, int mid, int right) {
 	int i = left, j = mid + 1, k = left;
 
 	while(i &lt;= mid &amp;&amp; j &lt;= right) {
-		if(arr[i] &lt; arr[j]) {
-			aux[k] = arr[i];
-			i++;
-		} else {
-			aux[k] = arr[j];
-			j++;
-		}
-
+		if(arr[i] &lt; arr[j]) 
+			aux[k] = arr[i++];
+		else 
+			aux[k] = arr[j++];
 		k++;
 	}
 
-	while(i &lt;= left) {
+	while(i &lt;= mid) {
 		aux[k++] = arr[i++];
 	}
 
@@ -322,7 +321,7 @@ public void merge(int[] arr, int[] aux, int left, int mid, int right) {
 	}
 
 	for(int p = left; p &lt;= right; p++) {
-		a[p] = aux[p];
+		arr[p] = aux[p];
 	}
 }
 </code></pre>
@@ -335,9 +334,20 @@ public void merge(int[] arr, int[] aux, int left, int mid, int right) {
       
       
       
-        <p><em>Disqus comments are disabled.</em></p>
+        <div id="disqus_thread">
+        </div>
         <script type="application/javascript">
           function showComments() {
+            // Config
+var disqus_config = function () {
+};
+// Build and append comments 
+var d = document;
+var s = d.createElement('script');
+s.async = true;
+s.src = '//' + "shahprincea" + '.disqus.com/embed.js';
+s.setAttribute('data-timestamp', + new Date());
+(d.head || d.body).appendChild(s);
             // Remove button
 var disqusButton = document.getElementById('disqus-button');
 disqusButton.parentNode.removeChild(disqusButton); 
@@ -361,7 +371,7 @@ disqusComments.style.display = 'block';
     </label>
   </div>
   
-    Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cupper-hugo-theme">Cupper</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>.
+    Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cupper-hugo-theme">Cupper</a>.
   
 </footer>
 

@@ -1,49 +1,52 @@
-baseURL = "https://shahprincea.github.io/leonidas/"
+# Site settings
+baseurl = "https://shahprincea.github.io/leonidas/"
+themesDir = "themes"
 languageCode = "en-us"
-defaultContentLanguage = "en"
-title = "Cupper"
-theme = "cupper-hugo-theme"
+title = "Programmer"
+theme = "hugo-cactus-theme"
+# Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
-disqusShortname = "yourdiscussshortname"
-enableGitInfo = true
-publishDir = "docs"
-
-[taxonomies]
-  tag = "tags"
-
-[permalinks]
-  post = "/:filename/"
-
-[imaging]
-  quality = 99
+# Disable comments by leaving disqusShortname empty
+disqusShortname = ""
 
 [params]
-  description = "An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project."
-  homeMetaContent = "An accessibility-friendly Hugo theme, ported from the original Cupper project."
-  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
-  # For more date formats see https://gohugo.io/functions/format/
-  dateFormat = "Jan 2, 2006"
-  codePenUser = "someUser"
-  katex = true
+	name = "Prince shah"
+	description = "I love coding and want to share my learnings with others"
+	bio = "Programmer"
+	# Enter optionally your twitter account
+	twitter = ""
+	enableRSS = true
 
-[menu]
-  [[menu.nav]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.nav]]
-    name = "Blog"
-    url = "/post/"
-    weight = 2
-  [[menu.nav]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 3
-  [[menu.nav]]
-    name = "About"
-    url = "/about/"
-    weight = 4
-  [[menu.nav]]
-    name = "RSS"
-    url = "/index.xml"
-    weight = 5
+	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
+	# linking local files with their path relative to the static folder, e.g. "css/styles.css"
+	customCSS = []
+	customJS  = []
+
+	# The variables below are optionally too and can be used to
+	# translate or customize each string of the theme.
+
+	# Navigation links
+	home = ""
+	subscribe = ""
+	# Pagination links
+	olderPosts = ""
+	newerPosts = ""
+	readMore = ""
+	copyright = ""
+	# Sharing options and author information in posts
+	aboutAuthor = "Keep smiling"
+	tweet = ""
+	share = ""
+	# 404 page
+	title404 = ""
+	subtitle404 = ""
+
+	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+	iconFont = "mono-social"
+    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+    socialIconStyle = "circle"
+
+# Add additional social link entries underneath
+[social]
+    github   = "https://github.com/shahprincea"
+    linkedIn = "https://www.linkedin.com/in/shahprincea/"

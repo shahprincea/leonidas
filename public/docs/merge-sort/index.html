@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Merge Sort - Hugo Whisper Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://shahprincea.github.io/leonidas/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/leonidas/css/style.min.020d604e977275cf093999068602ba80e6eb2f78df409ccca5a76f02778bea56.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/leonidas/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-docs">
+      <a href="/leonidas/docs/">
+        <span>Docs</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://shahprincea.github.io/leonidas/"><img alt="Logo" src="/leonidas/images/logo.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://shahprincea.github.io/leonidas/"><img alt="Logo" src="/leonidas/images/logo-mobile.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home">
+      <a href="/leonidas/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-docs">
+      <a href="/leonidas/docs/">
+        <span>Docs</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://shahprincea.github.io/leonidas/docs/install-hugo/">Install Hugo</a>
+    </li>
+    
+    <li class="">
+      <a href="https://shahprincea.github.io/leonidas/docs/install-theme/">Install Theme</a>
+    </li>
+    
+    <li class="">
+      <a href="https://shahprincea.github.io/leonidas/docs/configure/">Configuration</a>
+    </li>
+    
+    <li class="">
+      <a href="https://shahprincea.github.io/leonidas/docs/specimen/">Specimen</a>
+    </li>
+    
+    <li class="">
+      <a href="https://shahprincea.github.io/leonidas/docs/example/">Hugo Whisper</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://shahprincea.github.io/leonidas/docs/merge-sort/">Merge Sort</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Merge Sort</h1>
+<div class="content">
+  
+
+<h2 id="sorting">Sorting</h2>
+
+<p>Merge sort is comparison based sorting.</p>
+
+<ul>
+<li><strong>Algo</strong> : Divide and Conquer</li>
+<li><strong>Time complexity</strong> : O(nlog(n))</li>
+
+<li><p><strong>Space Complexity</strong> : O(n)</p>
+<div class="highlight"><pre class="chroma">public void mergeSort(int[] arr) {
+
+	//Error handling
+	if(arr == null || arr.length == 0)
+		return;
+
+	int[] aux = new int[arr.length];	
+	mergeSort(arr, aux, 0, arr.length-1);	
+}
+
+
+public void mergeSort(int[] arr, int[] aux, int left, int right) {
+	if(left &lt; right) {
+
+		int mid = left + (right - left)/2;
+
+		//Divide
+		mergeSort(arr, aux, left, mid);
+		mergeSort(arr, aux, mid+1, right);
+		merge(arr, aux, left, mid, right);
+	}
+}
+
+//Merge two sorted array
+public void merge(int[] arr, int[] aux, int left, int mid, int right) {
+	int i = left, j = mid + 1, k = left;
+
+	while(i &lt;= mid &amp;&amp; j &lt;= right) {
+		if(arr[i] &lt; arr[j]) 
+			aux[k] = arr[i++];
+		else 
+			aux[k] = arr[j++];
+		k++;
+	}
+
+	while(i &lt;= mid) {
+		aux[k++] = arr[i++];
+	}
+
+	while(j &lt;= right) {
+		aux[k++] = arr[j++];
+	}
+
+	for(int p = left; p &lt;= right; p++) {
+		arr[p] = aux[p];
+	}
+}</pre></div></li>
+</ul>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/leonidas/js/scripts.min.bf1e1f7ae8e03db5f012356e825843facdff51c0a559cb0d27fe2bbe1db405c2.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

@@ -1,157 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Cupper</title>
+    <title>Tags on King Leonidas</title>
     <link>https://shahprincea.github.io/leonidas/tags/</link>
-    <description>Recent content in Tags on Cupper</description>
+    <description>Recent content in Tags on King Leonidas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shahprincea.github.io/leonidas/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>hugo</title>
-      <link>https://shahprincea.github.io/leonidas/tags/hugo/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>katex</title>
-      <link>https://shahprincea.github.io/leonidas/tags/katex/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/katex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://shahprincea.github.io/leonidas/tags/math/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>typesetting</title>
-      <link>https://shahprincea.github.io/leonidas/tags/typesetting/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/typesetting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://shahprincea.github.io/leonidas/tags/markdown/</link>
-      <pubDate>Thu, 14 Feb 2019 15:36:09 -0600</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>https://shahprincea.github.io/leonidas/tags/shortcodes/</link>
-      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>sort</title>
       <link>https://shahprincea.github.io/leonidas/tags/sort/</link>
-      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://shahprincea.github.io/leonidas/tags/sort/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>quotes</title>
-      <link>https://shahprincea.github.io/leonidas/tags/quotes/</link>
-      <pubDate>Wed, 26 Dec 2018 00:29:41 -0600</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/quotes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>command-line</title>
-      <link>https://shahprincea.github.io/leonidas/tags/command-line/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/command-line/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>theme</title>
-      <link>https://shahprincea.github.io/leonidas/tags/theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/theme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fun</title>
-      <link>https://shahprincea.github.io/leonidas/tags/fun/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/fun/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://shahprincea.github.io/leonidas/tags/git/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>go</title>
-      <link>https://shahprincea.github.io/leonidas/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>templates</title>
-      <link>https://shahprincea.github.io/leonidas/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jekyll</title>
-      <link>https://shahprincea.github.io/leonidas/tags/jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/jekyll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>migration</title>
-      <link>https://shahprincea.github.io/leonidas/tags/migration/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://shahprincea.github.io/leonidas/tags/migration/</guid>
       <description></description>
     </item>
     
