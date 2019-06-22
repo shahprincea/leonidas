@@ -3,18 +3,165 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://shahprincea.github.io/leonidas/katex-math-typesetting/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://shahprincea.github.io/leonidas/tags/hugo/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://shahprincea.github.io/leonidas/tags/katex/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/math/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/typesetting/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/cupper-typography/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/markdown/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/cupper-shortcodes/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/shortcodes/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/nasa-images/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/nasa/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/quotes-by-carl-jung/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/quotes/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/creating-a-new-theme/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/command-line/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/theme/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/about/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/goisforlovers/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/hugoisforlovers/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/fun/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/git/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/go/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/templates/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/migrate-from-jekyll/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/jekyll/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/migration/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/post/</loc>
+    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
   </url>
   
 </urlset>

@@ -1,11 +1,12 @@
-baseURL = "ttps://shahprincea.github.io/leonidas/"
+baseURL = "https://shahprincea.github.io/leonidas/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "King Leonidas"
+title = "Cupper"
 theme = "cupper-hugo-theme"
-disqusShortname = "shahprincea"
+googleAnalytics = ""
+disqusShortname = "yourdiscussshortname"
 enableGitInfo = true
-publishdir = "docs"
+publishDir = "docs"
 
 [taxonomies]
   tag = "tags"
@@ -19,7 +20,7 @@ publishdir = "docs"
 [params]
   description = "An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project."
   homeMetaContent = "An accessibility-friendly Hugo theme, ported from the original Cupper project."
-  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)."
+  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat = "Jan 2, 2006"
   codePenUser = "someUser"

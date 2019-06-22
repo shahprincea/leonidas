@@ -6,12 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.55.6" />
-  <link rel="canonical" href="https://shahprincea.github.io/leonidas/">
+  <link rel="canonical" href="https://shahprincea.github.io/leonidas/katex-math-typesetting/">
 
-  
-    
-      <meta name="description" content="An accessibility-friendly Hugo theme, ported from the original Cupper project.">
-    
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -36,9 +32,7 @@
 
   
   
-    
-  
-  <title>Cupper</title>
+  <title>Katex Math Typesetting | Cupper</title>
 </head>
 
   <body>
@@ -161,7 +155,7 @@
       
       
       
-      <a href="/leonidas/" aria-current="page">
+      <a href="/leonidas/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -174,7 +168,7 @@
       
       
       
-      <a href="/leonidas/post/" >
+      <a href="/leonidas/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -229,20 +223,119 @@
         <div>
           
   <main id="main">
-    <h1>Home</h1>
-    <p>Welcome to <strong>Cupper</strong>: An accessibility-friendly Hugo theme, ported from the <a href="https://github.com/ThePacielloGroup/cupper">original Cupper</a> project. Here are some of its features:</p>
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Katex Math Typesetting
+    </h1>
 
-<div class="ticks">
-  <ul>
-<li>Screen reader and keyboard accessible</li>
-<li>Responsive</li>
-<li>Numerous shortcodes</li>
-<li>Toggleable dark theme</li>
-<li>Toggleable table of contents per blog post</li>
-</ul>
-</div>
+    <div class="date">
+      
+      
+      <strong aria-hidden="true">Publish date: </strong>Mar 28, 2019
+      
+        
+          <br>
+          <strong aria-hidden="true">Last updated: </strong>Jun 22, 2019
+        
+      
+    </div>
+
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://shahprincea.github.io/leonidas/tags/katex/">katex</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://shahprincea.github.io/leonidas/tags/math/">math</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://shahprincea.github.io/leonidas/tags/typesetting/">typesetting</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://shahprincea.github.io/leonidas/tags/hugo/">hugo</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
+      
+
+
+    
+
+    <p>Enable Katex in the config file by setting the <code>katex</code> param to <code>true</code>. This will import the necessary Katex CSS/JS.</p>
+
+<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">supported TeX functions</a>.</p>
+
+<p>Some math:</p>
+
+<pre><code>$$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
+</code></pre>
+
+<p>$$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$</p>
+
+<p>More math:</p>
+
+<pre><code>$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$
+</code></pre>
+
+<p>$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$</p>
 
   </main>
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>
