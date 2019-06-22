@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.55.6" />
-  <link rel="canonical" href="https://shahprincea.github.io/leonidas/post/">
+  <link rel="canonical" href="https://shahprincea.github.io/leonidas/merge-sort/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Blog | Cupper</title>
+  <title>Merge Sort | Cupper</title>
 </head>
 
   <body>
@@ -223,110 +223,135 @@
         <div>
           
   <main id="main">
-    <h1>Blog</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Merge Sort
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong aria-hidden="true">Publish date: </strong>Feb 12, 2019
+      
+        
+      
+    </div>
+
     
-      <li>
-        <h2>
-          <a href="https://shahprincea.github.io/leonidas/katex-math-typesetting/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Katex Math Typesetting
-          </a>
-        </h2>
-      </li>        
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://shahprincea.github.io/leonidas/tags/sort/">sort</a>
+            </li>
+          
+        </ul>
+      </div>
     
-      <li>
-        <h2>
-          <a href="https://shahprincea.github.io/leonidas/cupper-typography/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Cupper Typography
-          </a>
-        </h2>
-      </li>        
     
-      <li>
-        <h2>
-          <a href="https://shahprincea.github.io/leonidas/merge-sort/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Merge Sort
-          </a>
-        </h2>
-      </li>        
     
-      <li>
-        <h2>
-          <a href="https://shahprincea.github.io/leonidas/cupper-shortcodes/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Cupper Shortcodes
-          </a>
-        </h2>
-      </li>        
+      
+
+
     
-      <li>
-        <h2>
-          <a href="https://shahprincea.github.io/leonidas/quotes-by-carl-jung/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Quotes by Carl Jung
-          </a>
-        </h2>
-      </li>        
+
     
-      <li>
-        <h2>
-          <a href="https://shahprincea.github.io/leonidas/creating-a-new-theme/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Creating a New Theme
-          </a>
-        </h2>
-      </li>        
-    
-      <li>
-        <h2>
-          <a href="https://shahprincea.github.io/leonidas/hugoisforlovers/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Getting Started with Hugo
-          </a>
-        </h2>
-      </li>        
-    
-      <li>
-        <h2>
-          <a href="https://shahprincea.github.io/leonidas/goisforlovers/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            (Hu)go Template Primer
-          </a>
-        </h2>
-      </li>        
-    
-      <li>
-        <h2>
-          <a href="https://shahprincea.github.io/leonidas/migrate-from-jekyll/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Migrate to Hugo from Jekyll
-          </a>
-        </h2>
-      </li>        
-    
-    </ul>
+
+<h2 id="sorting">Sorting</h2>
+
+<p>Merge sort is comparison based sorting.</p>
+
+<p>Algo : Divide and Conquer</p>
+
+<p>{{% note %}}
+Time complexity : O(nlog(n))
+Space Complexity : O(n)</p>
+
+<pre><code>public void mergeSort(int[] arr) {
+
+	//Error handling
+	if(arr == null || arr.length == 0)
+		return;
+
+	int[] aux = new int[arr.length];	
+	mergeSort(arr, aux, 0, arr.length);	
+}
+
+
+public void mergeSort(int[] arr, int[] aux, int left, int right) {
+	if(left &lt; right) {
+
+		int mid = left + (right - left)/2;
+
+		//Divide
+		mergeSort(arr, aux, left, mid);
+		mergeSort(arr, aux, mid+1, right);
+		merge(arr, aux, left, mid, right);
+	}
+}
+
+//Merge two sorted array
+public void merge(int[] arr, int[] aux, int left, int mid, int right) {
+	int i = left, j = mid + 1, k = left;
+
+	while(i &lt;= mid &amp;&amp; j &lt;= right) {
+		if(arr[i] &lt; arr[j]) {
+			aux[k] = arr[i];
+			i++;
+		} else {
+			aux[k] = arr[j];
+			j++;
+		}
+
+		k++;
+	}
+
+	while(i &lt;= left) {
+		aux[k++] = arr[i++];
+	}
+
+	while(j &lt;= right) {
+		aux[k++] = arr[j++];
+	}
+
+	for(int p = left; p &lt;= right; p++) {
+		a[p] = aux[p];
+	}
+}
+</code></pre>
+
   </main>
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>
