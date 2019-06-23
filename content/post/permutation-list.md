@@ -1,5 +1,5 @@
 ---
-title: "Permutation of the string"
+title: "Permutation of the List"
 tags: [recursion]
 ---
 
