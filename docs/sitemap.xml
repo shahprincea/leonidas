@@ -13,11 +13,11 @@
   </url>
   
   <url>
-    <loc>https://shahprincea.github.io/leonidas/post/count-sort/</loc>
+    <loc>https://shahprincea.github.io/leonidas/post/heap-sort/</loc>
   </url>
   
   <url>
-    <loc>https://shahprincea.github.io/leonidas/post/heap-sort/</loc>
+    <loc>https://shahprincea.github.io/leonidas/post/count-sort/</loc>
   </url>
   
   <url>
@@ -25,7 +25,7 @@
   </url>
   
   <url>
-    <loc>https://shahprincea.github.io/leonidas/post/quick-sort/</loc>
+    <loc>https://shahprincea.github.io/leonidas/post/permutation-string/</loc>
   </url>
   
   <url>
@@ -39,12 +39,31 @@
   </url>
   
   <url>
+    <loc>https://shahprincea.github.io/leonidas/post/quick-sort/</loc>
+  </url>
+  
+  <url>
     <loc>https://shahprincea.github.io/leonidas/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/heaps/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/recursion/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://shahprincea.github.io/leonidas/tags/sorting/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/string/</loc>
     <priority>0</priority>
   </url>
   

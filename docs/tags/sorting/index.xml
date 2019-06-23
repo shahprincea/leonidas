@@ -11,22 +11,22 @@
     
     
     <item>
-      <title>Merge Sort</title>
-      <link>https://shahprincea.github.io/leonidas/post/count-sort/</link>
+      <title>Heap Sort</title>
+      <link>https://shahprincea.github.io/leonidas/post/heap-sort/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shahprincea.github.io/leonidas/post/count-sort/</guid>
+      <guid>https://shahprincea.github.io/leonidas/post/heap-sort/</guid>
       <description> Sorting Merge sort is comparison based sorting.
  Algo : Divide and Conquer Time complexity : O(nlog(n)) Space Complexity : O(n)
 public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length == 0) return; int[] aux = new int[arr.length];	mergeSort(arr, aux, 0, arr.length-1);	} public void mergeSort(int[] arr, int[] aux, int left, int right) { if(left &amp;lt; right) { int mid = left + (right - left)/2; //Divide mergeSort(arr, aux, left, mid); mergeSort(arr, aux, mid+1, right); merge(arr, aux, left, mid, right); } } //Merge two sorted array public void merge(int[] arr, int[] aux, int left, int mid, int right) { int i = left, j = mid + 1, k = left; while(i &amp;lt;= mid &amp;amp;&amp;amp; j &amp;lt;= right) { if(arr[i] &amp;lt; arr[j]) aux[k] = arr[i++]; else aux[k] = arr[j++]; k++; } while(i &amp;lt;= mid) { aux[k++] = arr[i++]; } while(j &amp;lt;= right) { aux[k++] = arr[j++]; } for(int p = left; p &amp;lt;= right; p++) { arr[p] = aux[p]; } }   </description>
     </item>
     
     <item>
-      <title>Merge Sort</title>
-      <link>https://shahprincea.github.io/leonidas/post/heap-sort/</link>
+      <title>Linear Sort</title>
+      <link>https://shahprincea.github.io/leonidas/post/count-sort/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shahprincea.github.io/leonidas/post/heap-sort/</guid>
+      <guid>https://shahprincea.github.io/leonidas/post/count-sort/</guid>
       <description> Sorting Merge sort is comparison based sorting.
  Algo : Divide and Conquer Time complexity : O(nlog(n)) Space Complexity : O(n)
 public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length == 0) return; int[] aux = new int[arr.length];	mergeSort(arr, aux, 0, arr.length-1);	} public void mergeSort(int[] arr, int[] aux, int left, int right) { if(left &amp;lt; right) { int mid = left + (right - left)/2; //Divide mergeSort(arr, aux, left, mid); mergeSort(arr, aux, mid+1, right); merge(arr, aux, left, mid, right); } } //Merge two sorted array public void merge(int[] arr, int[] aux, int left, int mid, int right) { int i = left, j = mid + 1, k = left; while(i &amp;lt;= mid &amp;amp;&amp;amp; j &amp;lt;= right) { if(arr[i] &amp;lt; arr[j]) aux[k] = arr[i++]; else aux[k] = arr[j++]; k++; } while(i &amp;lt;= mid) { aux[k++] = arr[i++]; } while(j &amp;lt;= right) { aux[k++] = arr[j++]; } for(int p = left; p &amp;lt;= right; p++) { arr[p] = aux[p]; } }   </description>
@@ -44,7 +44,7 @@ public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length
     </item>
     
     <item>
-      <title>Merge Sort</title>
+      <title>Quick Sort</title>
       <link>https://shahprincea.github.io/leonidas/post/quick-sort/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

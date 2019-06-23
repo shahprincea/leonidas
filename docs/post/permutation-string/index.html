@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Prince shah">
+<meta name="description" content="I love coding and want to share my learnings with others">
+<meta name="generator" content="Hugo 0.55.6" />
+<title>Permutation of the string</title>
+<link rel="shortcut icon" href="https://shahprincea.github.io/leonidas/images/favicon.ico">
+<link rel="stylesheet" href="https://shahprincea.github.io/leonidas/css/style.css">
+<link rel="stylesheet" href="https://shahprincea.github.io/leonidas/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="https://shahprincea.github.io/leonidas/css/monosocialiconsfont.css">
+
+
+
+<link href="https://shahprincea.github.io/leonidas/index.xml" rel="alternate" type="application/rss+xml" title="Programmer" />
+
+
+<meta property="og:title" content="Permutation of the string" />
+<meta property="og:description" content="Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
+The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
+Base case is when start point reaches the length of the input string.
+public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); if(str == null || str." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shahprincea.github.io/leonidas/post/permutation-string/" />
+
+
+
+
+<meta itemprop="name" content="Permutation of the string">
+<meta itemprop="description" content="Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
+The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
+Base case is when start point reaches the length of the input string.
+public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); if(str == null || str.">
+
+
+
+<meta itemprop="wordCount" content="149">
+
+
+
+<meta itemprop="keywords" content="recursion,string," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Permutation of the string"/>
+<meta name="twitter:description" content="Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
+The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
+Base case is when start point reaches the length of the input string.
+public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); if(str == null || str."/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='https://shahprincea.github.io/leonidas/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+ 		<a href='/leonidas/about/'>About</a>
+  	
+
+	
+		<a class="cta" href="https://shahprincea.github.io/leonidas/index.xml">Subscribe</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Permutation of the string</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        January 1, 0001
+        <br>
+        
+        
+            
+                <a href="https://shahprincea.github.io/leonidas/tags/recursion">recursion</a>
+            
+                <a href="https://shahprincea.github.io/leonidas/tags/string">string</a>
+            
+        
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<h2 id="permutation-of-the-string">Permutation of the String</h2>
+
+<p>Given a string return all its permutation. One way to understand this is to draw a tree for small string.</p> 
+
+<p>The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.</p>
+
+<p>Base case is when start point reaches the length of the input string.</p>
+
+<pre><code>public List&lt;String&gt; permutation(String str) {
+	List&lt;String&gt; list = new ArrayList&lt;&gt;();
+	if(str == null || str.isEmpty())
+		return list;
+	helper(str.toCharArray(), list, 0);
+	return list;
+}
+
+
+public void helper(char[] arr, List&lt;String&gt; list, int start) {
+	//Base case
+	if(start == arr.length-1) {
+		list.add(new String(arr));
+		return;
+	}
+
+	for(int i = 0; i &lt; arr.length; i++) {
+		swap(arr, i, start);
+		helper(arr, list, start+1);
+		swap(arr, i, start);
+	}
+}
+
+
+public void swap(char[] arr, int i, int j) {
+	char tmp = arr[i];
+	arr[i] = arr[j];
+	arr[j] = tmp;
+}
+</code></pre>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    
+    <img class="avatar" src="https://shahprincea.github.io/leonidas/images/avatar.png">
+    <div>
+        <span class="dark">Prince shah</span>
+        <span>Keep smiling</span>
+    </div>
+    
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fshahprincea.github.io%2fleonidas%2fpost%2fpermutation-string%2f - Permutation%20of%20the%20string "><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/leonidas/post/heap-sort/">Heap Sort<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/leonidas/post/count-sort/">Linear Sort<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/leonidas/post/merge-sort/">Merge Sort<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/leonidas/post/quick-sort/">Quick Sort<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://github.com/shahprincea">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/shahprincea/">
+        circlelinkedin
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 22069 Prince shah
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://shahprincea.github.io/leonidas/js/main.js"></script>
+<script src="https://shahprincea.github.io/leonidas/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>
