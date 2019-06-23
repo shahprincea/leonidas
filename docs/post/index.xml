@@ -45,6 +45,18 @@ public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length
     
     <item>
       <title>Permutation of the string</title>
+      <link>https://shahprincea.github.io/leonidas/post/permutation-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shahprincea.github.io/leonidas/post/permutation-list/</guid>
+      <description>Permutation of the List Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.
+The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.
+Base case is when start point reaches the size().
+public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; permutation(List&amp;lt;Integer&amp;gt; list) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; lists = new ArrayList&amp;lt;&amp;gt;(); //Error Handling if(list == null || list.</description>
+    </item>
+    
+    <item>
+      <title>Permutation of the string</title>
       <link>https://shahprincea.github.io/leonidas/post/permutation-string/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -12,7 +12,7 @@ tags: [recursion, string]
 <p>Base case is when start point reaches the length of the input string.</p>
 
 
-```
+```java
 public List<String> permutation(String str) {
 	List<String> list = new ArrayList<>();
 	if(str == null || str.isEmpty())

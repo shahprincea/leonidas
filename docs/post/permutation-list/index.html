@@ -22,36 +22,36 @@
 
 
 <meta property="og:title" content="Permutation of the string" />
-<meta property="og:description" content="Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
-The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
-Base case is when start point reaches the length of the input string.
-public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); if(str == null || str." />
+<meta property="og:description" content="Permutation of the List Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.
+The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.
+Base case is when start point reaches the size().
+public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) { List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;(); //Error Handling if(list == null || list." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shahprincea.github.io/leonidas/post/permutation-string/" />
+<meta property="og:url" content="https://shahprincea.github.io/leonidas/post/permutation-list/" />
 
 
 
 
 <meta itemprop="name" content="Permutation of the string">
-<meta itemprop="description" content="Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
-The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
-Base case is when start point reaches the length of the input string.
-public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); if(str == null || str.">
+<meta itemprop="description" content="Permutation of the List Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.
+The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.
+Base case is when start point reaches the size().
+public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) { List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;(); //Error Handling if(list == null || list.">
 
 
 
-<meta itemprop="wordCount" content="149">
+<meta itemprop="wordCount" content="141">
 
 
 
-<meta itemprop="keywords" content="recursion,string," />
+<meta itemprop="keywords" content="recursion," />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Permutation of the string"/>
-<meta name="twitter:description" content="Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
-The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
-Base case is when start point reaches the length of the input string.
-public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); if(str == null || str."/>
+<meta name="twitter:description" content="Permutation of the List Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.
+The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.
+Base case is when start point reaches the size().
+public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) { List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;(); //Error Handling if(list == null || list."/>
 
 
     </head>
@@ -85,8 +85,6 @@ public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = ne
             
                 <a href="https://shahprincea.github.io/leonidas/tags/recursion">recursion</a>
             
-                <a href="https://shahprincea.github.io/leonidas/tags/string">string</a>
-            
         
         
         </h2>
@@ -94,42 +92,51 @@ public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = ne
     <section id="post-body">
         
 
-<h2 id="permutation-of-the-string">Permutation of the String</h2>
+<h2 id="permutation-of-the-list">Permutation of the List</h2>
 
-<p>Given a string return all its permutation. One way to understand this is to draw a tree for small string.</p> 
+<p>Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.</p> 
 
-<p>The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.</p>
+<p>The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.</p>
 
-<p>Base case is when start point reaches the length of the input string.</p>
+<p>Base case is when start point reaches the size().</p>
 
-<pre><code class="language-java">public List&lt;String&gt; permutation(String str) {
-	List&lt;String&gt; list = new ArrayList&lt;&gt;();
-	if(str == null || str.isEmpty())
-		return list;
-	helper(str.toCharArray(), list, 0);
-	return list;
+<pre><code class="language-java">public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) {
+	List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;();
+
+	//Error Handling
+	if(list == null || list.size() == 0)
+		return lists;
+
+	helper(list, lists, new ArrayList&lt;Integer&gt;(), 0);
+
+	return lists;
 }
 
+public void helper(List&lt;Integer&gt; list, List&lt;List&lt;Integer&gt;&gt; lists, ArrayList&lt;Integer&gt; tmp, int start) {
 
-public void helper(char[] arr, List&lt;String&gt; list, int start) {
-	//Base case
-	if(start == arr.length-1) {
-		list.add(new String(arr));
-		return;
-	}
+	if(tmp.size() == list.size()) {
+            lists.add(new ArrayList&lt;&gt;(tmp));
+            return;
+        }
 
-	for(int i = 0; i &lt; arr.length; i++) {
-		swap(arr, i, start);
-		helper(arr, list, start+1);
-		swap(arr, i, start);
-	}
-}
+        HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
+        for(int i = 0; i &lt; list.size(); i++) {
 
+            if(set.contains(list.get(i)))
+                continue;
+			
+			//Choose
+            tmp.add(list.get(i));
+            set.add(list.get(i));
 
-public void swap(char[] arr, int i, int j) {
-	char tmp = arr[i];
-	arr[i] = arr[j];
-	arr[j] = tmp;
+            //Explore
+            helper(list, lists, tmp, start+1);
+
+            //Unchoose
+            tmp.remove(tmp.size()-1);
+            set.remove(list.get(i));
+            
+        }
 }
 </code></pre>
 
@@ -145,7 +152,7 @@ public void swap(char[] arr, int i, int j) {
     </div>
     
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fshahprincea.github.io%2fleonidas%2fpost%2fpermutation-string%2f - Permutation%20of%20the%20string "><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fshahprincea.github.io%2fleonidas%2fpost%2fpermutation-list%2f - Permutation%20of%20the%20string "><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -179,7 +186,7 @@ public void swap(char[] arr, int i, int j) {
         </li>
     
         <li>
-            <a href="/leonidas/post/permutation-list/">Permutation of the string<aside class="dates">Jan 1 0001</aside></a>
+            <a href="/leonidas/post/permutation-string/">Permutation of the string<aside class="dates">Jan 1 0001</aside></a>
         </li>
     
         <li>
