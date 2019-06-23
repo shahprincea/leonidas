@@ -1,6 +1,7 @@
 # Site settings
 baseurl = "https://shahprincea.github.io/leonidas/"
 themesDir = "themes"
+publishDir = "docs"
 languageCode = "en-us"
 title = "Programmer"
 theme = "hugo-cactus-theme"

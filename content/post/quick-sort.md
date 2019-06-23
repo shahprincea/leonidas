@@ -1,5 +1,5 @@
 ---
-title: "Merge Sort"
+title: "Quick Sort"
 tags: [sorting]
 ---
 

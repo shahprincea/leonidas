@@ -3,34 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://shahprincea.github.io/leonidas/</loc>
-    <lastmod>2019-06-22T04:11:48-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://shahprincea.github.io/leonidas/about/</loc>
-    <lastmod>2019-06-22T04:11:48-07:00</lastmod>
+    <lastmod>2015-06-20T14:02:37+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://shahprincea.github.io/leonidas/post/</loc>
-    <lastmod>2019-06-22T03:43:24-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shahprincea.github.io/leonidas/merge-sort/</loc>
-    <lastmod>2019-06-22T08:08:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shahprincea.github.io/leonidas/tags/</loc>
-    <lastmod>2019-06-22T08:08:23-07:00</lastmod>
+    <loc>https://shahprincea.github.io/leonidas/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://shahprincea.github.io/leonidas/tags/sort/</loc>
-    <lastmod>2019-06-22T08:08:23-07:00</lastmod>
+    <loc>https://shahprincea.github.io/leonidas/post/count-sort/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/post/heap-sort/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/post/merge-sort/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/post/quick-sort/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/post/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/sorting/</loc>
     <priority>0</priority>
   </url>
   

@@ -1,6 +1,6 @@
 ---
-title: "Merge Sort"
-tags: [sorting]
+title: "Heap Sort"
+tags: [heaps, sorting]
 ---
 
 ## Sorting
