@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://shahprincea.github.io/leonidas/post/combination-list/</guid>
-      <description> Combination of the number public static List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; powerSet(List&amp;lt;Integer&amp;gt; list) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; lists = new ArrayList&amp;lt;&amp;gt;(); if(list == null || list.isEmpty()) return lists; helper(list, lists, new ArrayList&amp;lt;Integer&amp;gt;(), 0); return lists; } public static void helper(List&amp;lt;Integer&amp;gt; list, List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; lists, ArrayList&amp;lt;Integer&amp;gt; tmp, int start) { lists.add(new ArrayList&amp;lt;Integer&amp;gt;(tmp)); if(start == list.size()-1) return; for(int i = start; i &amp;lt; list.size(); i++) { //Choose tmp.add(list.get(i)); //explore helper(list, lists, tmp, start+1); //UnChoose tmp.remove(tmp.size()-1); } }  </description>
+      <description>Combination of the number  Algo : Divide and Conquer Time complexity : O(2^(n)) since at each stage you have two choices either pick an item or not to pick an item. Space Complexity : O(n)  public static List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; powerSet(List&amp;lt;Integer&amp;gt; list) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; lists = new ArrayList&amp;lt;&amp;gt;(); if(list == null || list.isEmpty()) return lists; helper(list, lists, new ArrayList&amp;lt;Integer&amp;gt;(), 0); return lists; } public static void helper(List&amp;lt;Integer&amp;gt; list, List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; lists, ArrayList&amp;lt;Integer&amp;gt; tmp, int start) { lists.</description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@ public void mergeSort(int[] arr) { //Error handling if(arr == null || arr.length
       <description>Permutation of the List Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.
 The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.
 Base case is when start point reaches the size().
-public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; permutation(List&amp;lt;Integer&amp;gt; list) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; lists = new ArrayList&amp;lt;&amp;gt;(); //Error Handling if(list == null || list.</description>
+ Algo : Divide and Conquer Time complexity : O(n!</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; permutation(List&amp;lt;I
       <description>Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
 The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
 Base case is when start point reaches the length of the input string.
-public List&amp;lt;String&amp;gt; permutation(String str) { List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;(); if(str == null || str.</description>
+ Algo : Recursion Time complexity : O(n!</description>
     </item>
     
     <item>

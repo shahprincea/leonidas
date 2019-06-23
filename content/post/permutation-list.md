@@ -11,6 +11,9 @@ tags: [recursion]
 
 <p>Base case is when start point reaches the size().</p>
 
+- <strong>Algo</strong> : Divide and Conquer 
+- <strong>Time complexity</strong> : O(n!)
+- <strong>Space Complexity</strong> : O(n) 
 
 ```java
 public List<List<Integer>> permutation(List<Integer> list) {

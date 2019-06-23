@@ -25,7 +25,7 @@
 <meta property="og:description" content="Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
 The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
 Base case is when start point reaches the length of the input string.
-public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); if(str == null || str." />
+ Algo : Recursion Time complexity : O(n!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shahprincea.github.io/leonidas/post/permutation-string/" />
 
@@ -36,11 +36,11 @@ public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = ne
 <meta itemprop="description" content="Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
 The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
 Base case is when start point reaches the length of the input string.
-public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); if(str == null || str.">
+ Algo : Recursion Time complexity : O(n!">
 
 
 
-<meta itemprop="wordCount" content="149">
+<meta itemprop="wordCount" content="181">
 
 
 
@@ -51,7 +51,7 @@ public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = ne
 <meta name="twitter:description" content="Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
 The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
 Base case is when start point reaches the length of the input string.
-public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = new ArrayList&lt;&gt;(); if(str == null || str."/>
+ Algo : Recursion Time complexity : O(n!"/>
 
 
     </head>
@@ -101,6 +101,12 @@ public List&lt;String&gt; permutation(String str) { List&lt;String&gt; list = ne
 <p>The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.</p>
 
 <p>Base case is when start point reaches the length of the input string.</p>
+
+<ul>
+<li><strong>Algo</strong> : Recursion</li>
+<li><strong>Time complexity</strong> : O(n!) since at level 1 it will be length then next layer would be length -1 then lenght -2 and so on.</li>
+<li><strong>Space Complexity</strong> : O(n)</li>
+</ul>
 
 <pre><code class="language-java">public List&lt;String&gt; permutation(String str) {
 	List&lt;String&gt; list = new ArrayList&lt;&gt;();
@@ -216,7 +222,7 @@ public void swap(char[] arr, int i, int j) {
     
     <p class="small">
     
-        © Copyright 22069 Prince shah
+        © Copyright 23069 Prince shah
     
     </p>
 </footer>

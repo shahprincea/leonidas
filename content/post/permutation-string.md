@@ -11,6 +11,9 @@ tags: [recursion, string]
 
 <p>Base case is when start point reaches the length of the input string.</p>
 
+- <strong>Algo</strong> : Recursion 
+- <strong>Time complexity</strong> : O(n!) since at level 1 it will be length then next layer would be length -1 then lenght -2 and so on. 
+- <strong>Space Complexity</strong> : O(n) 
 
 ```java
 public List<String> permutation(String str) {

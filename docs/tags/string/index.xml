@@ -19,7 +19,7 @@
       <description>Permutation of the String Given a string return all its permutation. One way to understand this is to draw a tree for small string.
 The high level logic is to print all the permutation with first character lock. Then go into recursion and lock second position and print all its permutation and so on.
 Base case is when start point reaches the length of the input string.
-public List&amp;lt;String&amp;gt; permutation(String str) { List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;(); if(str == null || str.</description>
+ Algo : Recursion Time complexity : O(n!</description>
     </item>
     
   </channel>

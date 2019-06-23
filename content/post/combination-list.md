@@ -5,6 +5,10 @@ tags: [recursion]
 
 ## Combination of the number
 
+- <strong>Algo</strong> : Divide and Conquer 
+- <strong>Time complexity</strong> : O(2^(n)) since at each stage you have two choices either pick an item or not to pick an item. 
+- <strong>Space Complexity</strong> : O(n) 
+
 ```java
 public static List<List<Integer>> powerSet(List<Integer> list) {
 
