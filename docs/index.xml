@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Combination of the list</title>
+      <link>https://shahprincea.github.io/leonidas/post/combination-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shahprincea.github.io/leonidas/post/combination-list/</guid>
+      <description> Combination of the number public static List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; powerSet(List&amp;lt;Integer&amp;gt; list) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; lists = new ArrayList&amp;lt;&amp;gt;(); if(list == null || list.isEmpty()) return lists; helper(list, lists, new ArrayList&amp;lt;Integer&amp;gt;(), 0); return lists; } public static void helper(List&amp;lt;Integer&amp;gt; list, List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; lists, ArrayList&amp;lt;Integer&amp;gt; tmp, int start) { lists.add(new ArrayList&amp;lt;Integer&amp;gt;(tmp)); if(start == list.size()-1) return; for(int i = start; i &amp;lt; list.size(); i++) { //Choose tmp.add(list.get(i)); //explore helper(list, lists, tmp, start+1); //UnChoose tmp.remove(tmp.size()-1); } }  </description>
+    </item>
+    
+    <item>
       <title>Heap Sort</title>
       <link>https://shahprincea.github.io/leonidas/post/heap-sort/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

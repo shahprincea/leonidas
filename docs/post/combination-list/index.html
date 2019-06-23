@@ -7,7 +7,7 @@
 <meta name="author" content="Prince shah">
 <meta name="description" content="I love coding and want to share my learnings with others">
 <meta name="generator" content="Hugo 0.55.6" />
-<title>Permutation of the List</title>
+<title>Combination of the list</title>
 <link rel="shortcut icon" href="https://shahprincea.github.io/leonidas/images/favicon.ico">
 <link rel="stylesheet" href="https://shahprincea.github.io/leonidas/css/style.css">
 <link rel="stylesheet" href="https://shahprincea.github.io/leonidas/css/highlight.css">
@@ -21,37 +21,28 @@
 <link href="https://shahprincea.github.io/leonidas/index.xml" rel="alternate" type="application/rss+xml" title="Programmer" />
 
 
-<meta property="og:title" content="Permutation of the List" />
-<meta property="og:description" content="Permutation of the List Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.
-The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.
-Base case is when start point reaches the size().
-public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) { List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;(); //Error Handling if(list == null || list." />
+<meta property="og:title" content="Combination of the list" />
+<meta property="og:description" content=" Combination of the number public static List&lt;List&lt;Integer&gt;&gt; powerSet(List&lt;Integer&gt; list) { List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;(); if(list == null || list.isEmpty()) return lists; helper(list, lists, new ArrayList&lt;Integer&gt;(), 0); return lists; } public static void helper(List&lt;Integer&gt; list, List&lt;List&lt;Integer&gt;&gt; lists, ArrayList&lt;Integer&gt; tmp, int start) { lists.add(new ArrayList&lt;Integer&gt;(tmp)); if(start == list.size()-1) return; for(int i = start; i &lt; list.size(); i&#43;&#43;) { //Choose tmp.add(list.get(i)); //explore helper(list, lists, tmp, start&#43;1); //UnChoose tmp.remove(tmp.size()-1); } }  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shahprincea.github.io/leonidas/post/permutation-list/" />
+<meta property="og:url" content="https://shahprincea.github.io/leonidas/post/combination-list/" />
 
 
 
 
-<meta itemprop="name" content="Permutation of the List">
-<meta itemprop="description" content="Permutation of the List Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.
-The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.
-Base case is when start point reaches the size().
-public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) { List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;(); //Error Handling if(list == null || list.">
+<meta itemprop="name" content="Combination of the list">
+<meta itemprop="description" content=" Combination of the number public static List&lt;List&lt;Integer&gt;&gt; powerSet(List&lt;Integer&gt; list) { List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;(); if(list == null || list.isEmpty()) return lists; helper(list, lists, new ArrayList&lt;Integer&gt;(), 0); return lists; } public static void helper(List&lt;Integer&gt; list, List&lt;List&lt;Integer&gt;&gt; lists, ArrayList&lt;Integer&gt; tmp, int start) { lists.add(new ArrayList&lt;Integer&gt;(tmp)); if(start == list.size()-1) return; for(int i = start; i &lt; list.size(); i&#43;&#43;) { //Choose tmp.add(list.get(i)); //explore helper(list, lists, tmp, start&#43;1); //UnChoose tmp.remove(tmp.size()-1); } }  ">
 
 
 
-<meta itemprop="wordCount" content="141">
+<meta itemprop="wordCount" content="68">
 
 
 
 <meta itemprop="keywords" content="recursion," />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Permutation of the List"/>
-<meta name="twitter:description" content="Permutation of the List Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.
-The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.
-Base case is when start point reaches the size().
-public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) { List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;(); //Error Handling if(list == null || list."/>
+<meta name="twitter:title" content="Combination of the list"/>
+<meta name="twitter:description" content=" Combination of the number public static List&lt;List&lt;Integer&gt;&gt; powerSet(List&lt;Integer&gt; list) { List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;(); if(list == null || list.isEmpty()) return lists; helper(list, lists, new ArrayList&lt;Integer&gt;(), 0); return lists; } public static void helper(List&lt;Integer&gt; list, List&lt;List&lt;Integer&gt;&gt; lists, ArrayList&lt;Integer&gt; tmp, int start) { lists.add(new ArrayList&lt;Integer&gt;(tmp)); if(start == list.size()-1) return; for(int i = start; i &lt; list.size(); i&#43;&#43;) { //Choose tmp.add(list.get(i)); //explore helper(list, lists, tmp, start&#43;1); //UnChoose tmp.remove(tmp.size()-1); } }  "/>
 
 
     </head>
@@ -75,7 +66,7 @@ public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) { L
         
 <article class="post">
     <header>
-        <h1>Permutation of the List</h1>
+        <h1>Combination of the list</h1>
         <h2 class="subtitle"></h2>
         <h2 class="headline">
         January 1, 0001
@@ -92,52 +83,41 @@ public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) { L
     <section id="post-body">
         
 
-<h2 id="permutation-of-the-list">Permutation of the List</h2>
+<h2 id="combination-of-the-number">Combination of the number</h2>
 
-<p>Given list of numbers return all its permutation. One way to understand this is to draw a tree for small list.</p> 
+<pre><code class="language-java">public static List&lt;List&lt;Integer&gt;&gt; powerSet(List&lt;Integer&gt; list) {
 
-<p>The high level logic is to print all the permutation with first number lock. Then go into recursion and lock second position and print all its permutation and so on.</p>
+        List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;();
 
-<p>Base case is when start point reaches the size().</p>
+        if(list == null || list.isEmpty())
+            return lists;
 
-<pre><code class="language-java">public List&lt;List&lt;Integer&gt;&gt; permutation(List&lt;Integer&gt; list) {
-	List&lt;List&lt;Integer&gt;&gt; lists = new ArrayList&lt;&gt;();
+        helper(list, lists, new ArrayList&lt;Integer&gt;(), 0);
 
-	//Error Handling
-	if(list == null || list.size() == 0)
-		return lists;
+        return lists;
+    }
 
-	helper(list, lists, new ArrayList&lt;Integer&gt;(), 0);
+    public static void helper(List&lt;Integer&gt; list, List&lt;List&lt;Integer&gt;&gt; lists, ArrayList&lt;Integer&gt; tmp, int start) {
 
-	return lists;
-}
+        lists.add(new ArrayList&lt;Integer&gt;(tmp));
 
-public void helper(List&lt;Integer&gt; list, List&lt;List&lt;Integer&gt;&gt; lists, ArrayList&lt;Integer&gt; tmp, int start) {
-
-	if(tmp.size() == list.size()) {
-            lists.add(new ArrayList&lt;&gt;(tmp));
+        if(start == list.size()-1)
             return;
-        }
 
-        HashSet&lt;Integer&gt; set = new HashSet&lt;&gt;();
-        for(int i = 0; i &lt; list.size(); i++) {
+        for(int i = start; i &lt; list.size(); i++) {
 
-            if(set.contains(list.get(i)))
-                continue;
-			
-			//Choose
+            //Choose
             tmp.add(list.get(i));
-            set.add(list.get(i));
 
-            //Explore
+            //explore
             helper(list, lists, tmp, start+1);
 
-            //Unchoose
+            //UnChoose
             tmp.remove(tmp.size()-1);
-            set.remove(list.get(i));
-            
+
         }
-}
+
+    }
 </code></pre>
 
     </section>
@@ -152,7 +132,7 @@ public void helper(List&lt;Integer&gt; list, List&lt;List&lt;Integer&gt;&gt; lis
     </div>
     
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fshahprincea.github.io%2fleonidas%2fpost%2fpermutation-list%2f - Permutation%20of%20the%20List "><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fshahprincea.github.io%2fleonidas%2fpost%2fcombination-list%2f - Combination%20of%20the%20list "><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -174,10 +154,6 @@ public void helper(List&lt;Integer&gt; list, List&lt;List&lt;Integer&gt;&gt; lis
     
     
         <li>
-            <a href="/leonidas/post/combination-list/">Combination of the list<aside class="dates">Jan 1 0001</aside></a>
-        </li>
-    
-        <li>
             <a href="/leonidas/post/heap-sort/">Heap Sort<aside class="dates">Jan 1 0001</aside></a>
         </li>
     
@@ -187,6 +163,10 @@ public void helper(List&lt;Integer&gt; list, List&lt;List&lt;Integer&gt;&gt; lis
     
         <li>
             <a href="/leonidas/post/merge-sort/">Merge Sort<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/leonidas/post/permutation-list/">Permutation of the List<aside class="dates">Jan 1 0001</aside></a>
         </li>
     
         <li>
