@@ -56,7 +56,16 @@
   </url>
   
   <url>
+    <loc>https://shahprincea.github.io/leonidas/post/tic-tac-toe/</loc>
+  </url>
+  
+  <url>
     <loc>https://shahprincea.github.io/leonidas/tags/heaps/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shahprincea.github.io/leonidas/tags/matrix/</loc>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>matrix on Programmer</title>
+    <link>https://shahprincea.github.io/leonidas/tags/matrix/</link>
+    <description>Recent content in matrix on Programmer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://shahprincea.github.io/leonidas/tags/matrix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tic Tac Toe isValid</title>
+      <link>https://shahprincea.github.io/leonidas/post/tic-tac-toe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shahprincea.github.io/leonidas/post/tic-tac-toe/</guid>
+      <description>Find winner in tic tac toe game Idea here is to use +1 for X and -1 for 0. Also, we will keep track of row sum, column sum and two diagonals sum in an array.
+ Algo : o(n^2) Time complexity : O(n) since you r storing stats of rows, cols and diagonals. Space Complexity : O(n)  public static boolean validTicTacToe(String[] board) { int n = board[0].length(); int[] rowCount = new int[n]; int[] colCount = new int[n]; int[] diagonals = new int[2]; int xCount = 0; int oCount = 0; int rowIndex = 0; for(String row : board) { for(int col = 0; col &amp;lt; n; col++) { int box = row.</description>
+    </item>
+    
+  </channel>
+</rss>
